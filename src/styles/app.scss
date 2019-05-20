@@ -1,0 +1,53 @@
+// @font-face{ 
+// 	font-family: 'AB Fill';
+// 	src: url('/fonts/ArialBlack.ttf');
+// 	src: url('/fonts/ArialBlack.ttf') format('truetype'),
+// 	     url('/fonts/ArialBlack.woff') format('woff'),
+// 	     url('/fonts/ArialBlack.woff') format('woff2'),
+// }
+
+
+// :root {
+// 	$color__brand-primary: 			#E82746;
+// 	$color__brand-secondary: 		#691220;
+// 	$color__brand-tertiary: 		#FF526C;
+// 	$color__brand-dark: 			#3B3B53;
+// 	$color__brand-dark_two: 		#2A2A3B;
+// 	$color__brand-dark_three: 		#4C4C6B;
+// 	$color__brand-light: 			#B7B4BF;
+// 	$color__brand-light_two: 		#9E9CA6;
+// 	$color__brand-light_three: 	#E0DDEB;
+// 	$app-background: radial-gradient(0% 100%, ellipse cover, 
+// 		$color__brand-dark_two 10%,rgba(138,114,76,0) 40%, 
+// 		linear-gradient(top, rgba(57,173,219,0.25) 0%, rgba(42,60,87,0.4) 100%), 
+// 		linear-gradient(-45deg, $color__brand-light 0%, $color__brand-dark_three 100%));
+
+	
+// 	$font__primary: 				'Arial', sans-serif;
+// 	$font__secondary: 				'Arial Black', 'AB Fill', sans-serif;
+
+
+// 	$color__system-black: 			#0a0a0a;
+// 	$color__system-white: 			#fafafa;
+// 	$color__system-pink: 			#cc81aa;
+// 	$color__system-red: 			#BD2A45;
+// 	$color__system-orange: 		#FABF74;
+// 	$color__system-yellow: 		#DED092;
+// 	$color__system-green:			#2eec96;
+// 	$color__system-blue: 			#00acd7;
+// 	$color__system-purple:			#703994;
+// }
+
+
+
+// ---------------------------------
+// 		Base
+// ---------------------------------
+	// Base
+	@import 'base/variables';
+	@import 'base/base';
+	@import 'base/typography';
+
+	// // Layout
+	@import 'layout/layout';
+

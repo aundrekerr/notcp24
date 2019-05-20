@@ -1,0 +1,46 @@
+@font-face{ 
+	font-family: 'AB Fill';
+	src: url('/fonts/ArialBlack.ttf');
+	src: url('/fonts/ArialBlack.ttf') format('truetype'),
+	     url('/fonts/ArialBlack.woff') format('woff'),
+	     url('/fonts/ArialBlack.woff') format('woff2'),
+}
+
+
+$color__brand-red:				#9a0a10;
+$color__brand-green: 			#6EAF47;
+$color__brand-med_blue:			#0c6fb5;
+$color__brand-med_blue_two:		#10609e;
+$color__brand-dark_blue:		#073459;
+$color__brand-dark_blue_two:	#082845; 
+
+
+$color__alt-primary: 			#E82746;
+$color__alt-secondary: 			#691220;
+$color__alt-tertiary: 			#FF526C;
+$color__alt-dark: 				#3B3B53;
+$color__alt-dark_two: 			#2A2A3B;
+$color__alt-dark_three: 		#4C4C6B;
+$color__alt-light: 				#B7B4BF;
+$color__alt-light_two: 			#9E9CA6;
+$color__alt-light_three: 		#E0DDEB;
+
+
+$font__primary: 				'Arial', sans-serif;
+$font__secondary: 				'Arial Black', 'AB Fill', sans-serif;
+
+
+$color__system-black: 			#0a0a0a;
+$color__system-white: 			#fafafa;
+$color__system-light_grey: 		#EBEBEB;
+$color__system-medium_grey: 	#D6D6D6;
+$color__system-dark_grey: 		#BDBDBD;
+$color__system-pink: 			#cc81aa;
+$color__system-red: 			#BD2A45;
+$color__system-orange: 			#FABF74;
+$color__system-yellow: 			#DED092;
+$color__system-green:			#2eec96;
+$color__system-blue: 			#00acd7;
+$color__system-purple:			#703994;
+
+$color__placeholder-gradient: linear-gradient(-90deg, $color__brand-dark_blue 10%, $color__brand-dark_blue_two 50%, $color__brand-dark_blue 90%);
