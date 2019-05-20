@@ -1,0 +1,7 @@
+[build]
+  command = "yarn build"
+  publish = "build"
+
+[context.production.environment]
+  REACT_APP_WEATHER_API_KEY="6cb182eedf908415e4466ed00e307b5c"
+  REACT_APP_YOUTUBE_API_KEY="AIzaSyAoKc4I31dfu5FxVl7DrfSnMJ7e9d1SEx0"
