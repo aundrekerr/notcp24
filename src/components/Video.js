@@ -31,13 +31,13 @@ export default class Video extends React.Component {
 	componentDidMount() {
 
 		/** Get the 10 latest YouTube videos. **/
-		// fetchYouTubeVideos( this.state.channels[this.state.currentChannel] )
-		// 	.then((videos) => {
-		// 		this.setState({
-		// 			videoList: videos,
-		// 			currentVideo: videos[this.state.videoListIndex].id.videoId
-		// 		});
-		// 	})
+		fetchYouTubeVideos( this.state.channels[this.state.currentChannel] )
+			.then((videos) => {
+				this.setState({
+					videoList: videos,
+					currentVideo: videos[this.state.videoListIndex].id.videoId
+				});
+			})
 	}
 
 	/** Load the previous video in the videoList array. **/
