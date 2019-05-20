@@ -6,7 +6,7 @@ var convert = require('xml-js');
  * Weather APIs requests.
  */
 export function fetchForecast ( locationID ) {
-	const endpoint = `http://api.openweathermap.org/data/2.5/forecast?id=${locationID}&APPID=${REACT_APP_WEATHER_API_KEY}&units=metric`;
+	const endpoint = `https://api.openweathermap.org/data/2.5/forecast?id=${locationID}&APPID=${REACT_APP_WEATHER_API_KEY}&units=metric`;
 
 	return fetch(endpoint)
 		.then((res) => res.json())
@@ -20,7 +20,7 @@ export function fetchForecast ( locationID ) {
 }
 
 export function fetchCityList ( ) {
-	const endpoint = `http://api.openweathermap.org/data/2.5/group?id=6167865,6091104,5950267,6122091,6066513,6087701,6173577,6075357,5907364,5882873,6094578,6104111,6092122,5911592,6074375,5906831,5888377,5913424,6172932,5969782&APPID=${REACT_APP_WEATHER_API_KEY}&units=metric`;
+	const endpoint = `https://api.openweathermap.org/data/2.5/group?id=6167865,6091104,5950267,6122091,6066513,6087701,6173577,6075357,5907364,5882873,6094578,6104111,6092122,5911592,6074375,5906831,5888377,5913424,6172932,5969782&APPID=${REACT_APP_WEATHER_API_KEY}&units=metric`;
 
 	return fetch(endpoint)
 		.then((res) => res.json())
