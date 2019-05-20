@@ -23,6 +23,7 @@
 		border-right: 1px solid #095793;
 		background: transparent -webkit-gradient(linear,left top,right top,from($color__brand-med_blue),to($color__brand-med_blue_two)) repeat scroll 0 0;
 		overflow: hidden;
+		cursor: pointer;
 		
 		&:last-of-type {
 			border-right: none;
