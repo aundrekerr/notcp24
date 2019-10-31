@@ -16,7 +16,7 @@ export default class Weather extends React.Component {
 	
 	/** Default location id is Toronto.  **/
 	state = {
-		forecastToggle: 'week',
+		forecastToggle: 'day',
 		weekForecast: null,
 		dayForecast: null,
 		cityList: null,
