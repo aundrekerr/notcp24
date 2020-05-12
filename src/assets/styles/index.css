@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-xxs {
+	font-size: 0.3rem;
+}
+
+/* Section Menu */
+.section-menu {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 0.5rem;
+	background: var(--brandTertiary);
+	border: 1px solid var(--brandSecondary);
+	border-bottom: none;
+	border-top-right-radius: 3px;
+	border-top-left-radius: 3px;
+}
+
+@media screen and (max-width: 768px){
+	.section-menu {
+		position: sticky;
+		top: 0;
+		left: 0;
+		z-index: 30;
+	}
+}
+
+
+/* Select Fields */
+.select-wrapper {
+	position: relative;
+}
+
+.select-wrapper:after {
+	content:'';
+	position: absolute;
+	top: 0.5rem;
+	right: 0.5rem;
+	width: 0;
+	height: 0;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 10px solid var(--brandPrimaryAlt);
+}
+
+select {
+	-webkit-appearance: none;
+	border-radius: 3px;
+	border: 1px solid var(--brandPrimary);
+	background: linear-gradient(
+		98.24deg,
+		var(--brandSecondary) 0.44%,
+		var(--brandSecondaryAlt) 100.44%);
+	color: var(--white);
+	font-weight: 600;
+	text-transform: uppercase;
+	padding: 0 1.75rem 0 0.25rem;
+	outline: none;
+}
+
+select:focus { border-color: var(--brandAccent); }
+select:disabled { color: var(--brandPrimaryAlt); }
+select option { text-transform: none; }
+
+/* Scroll Bar */
+@media screen and (min-width: 769px){
+	::-webkit-scrollbar {
+		width: 0.5rem;
+		height: 0.5rem;
+		background: var(--brandSecondaryAlt);
+	}
+	::-webkit-scrollbar-thumb {
+		background: var(--brandPrimary);
+	}
+	::-webkit-scrollbar-corner {
+		background: var(--brandSecondaryAlt);
+	}
+}
