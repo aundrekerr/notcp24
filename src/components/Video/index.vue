@@ -27,12 +27,11 @@
       />
     </div>
 
-    <template v-if="showVideoList">
-      <VideoList
-        :videos=allVideos
-        :jumpToVideo="jumpToVideo"
-      />
-    </template>
+    <VideoList
+      v-if="showVideoList"
+      :videos=allVideos
+      :jumpToVideo="jumpToVideo"
+    />
 
     <div
       class="video-container"
@@ -72,7 +71,7 @@
 import Vue from 'vue';
 import VueYoutube from 'vue-youtube';
 import PlayerControls from './PlayerControls.vue';
-import VideoList from './VideoList.vue';
+// import VideoList from './VideoList.vue';
 // import Refresh from '../Refresh.vue';
 import TimeAgo from '../TimeAgo.vue';
 
@@ -84,7 +83,7 @@ export default {
     // Refresh,
     TimeAgo,
     PlayerControls,
-    VideoList,
+    VideoList: () => import('./VideoList.vue'),
   },
   data() {
     return {

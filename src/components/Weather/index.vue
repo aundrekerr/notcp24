@@ -76,7 +76,7 @@
 
 <script>
 import Forecast from './Forecast.vue';
-import Detail from './Detail.vue';
+// import Detail from './Detail.vue';
 import Refresh from '../Refresh.vue';
 import TimeAgo from '../TimeAgo.vue';
 
@@ -84,7 +84,7 @@ export default {
   name: 'Weather',
   components: {
     Forecast,
-    Detail,
+    Detail: () => import('./Detail.vue'),
     Refresh,
     TimeAgo,
   },
