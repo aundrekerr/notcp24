@@ -3,6 +3,7 @@ import VueTimeago from 'vue-timeago';
 import App from './App.vue';
 
 import './assets/styles/index.css';
+import './registerServiceWorker';
 
 Vue.config.productionTip = false;
 Vue.use(require('vue-moment'));
