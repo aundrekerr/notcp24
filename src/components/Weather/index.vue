@@ -7,7 +7,7 @@
         :fetching="fetching"
         @click.native="getForecastData"
       />
-      <TimeAgo :fetching="fetching" />
+      <!-- <TimeAgo :fetching="fetching" /> -->
       <!-- Toggle -->
       <div
         v-on:click="toggleForecast"
@@ -78,7 +78,7 @@
 import Forecast from './Forecast.vue';
 // import Detail from './Detail.vue';
 import Refresh from '../Refresh.vue';
-import TimeAgo from '../TimeAgo.vue';
+// import TimeAgo from '../TimeAgo.vue';
 
 export default {
   name: 'Weather',
@@ -86,7 +86,7 @@ export default {
     Forecast,
     Detail: () => import('./Detail.vue'),
     Refresh,
-    TimeAgo,
+    // TimeAgo,
   },
   data() {
     return {

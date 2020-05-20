@@ -11,7 +11,7 @@
       /> -->
 
       <!-- Time Ago -->
-      <TimeAgo :fetching="fetching" />
+      <!-- <TimeAgo :fetching="fetching" /> -->
 
       <!-- Player Controls -->
       <PlayerControls
@@ -73,7 +73,7 @@ import VueYoutube from 'vue-youtube';
 import PlayerControls from './PlayerControls.vue';
 // import VideoList from './VideoList.vue';
 // import Refresh from '../Refresh.vue';
-import TimeAgo from '../TimeAgo.vue';
+// import TimeAgo from '../TimeAgo.vue';
 
 Vue.use(VueYoutube);
 
@@ -81,7 +81,7 @@ export default {
   name: 'Video',
   components: {
     // Refresh,
-    TimeAgo,
+    // TimeAgo,
     PlayerControls,
     VideoList: () => import('./VideoList.vue'),
   },

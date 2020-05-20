@@ -30,13 +30,13 @@
 <script>
 import { Timeline } from 'vue-tweet-embed';
 import Refresh from '../Refresh.vue';
-import TimeAgo from '../TimeAgo.vue';
+// import TimeAgo from '../TimeAgo.vue';
 
 export default {
   name: 'Traffic',
   components: {
     Refresh,
-    TimeAgo,
+    // TimeAgo,
     Timeline,
   },
   data() {

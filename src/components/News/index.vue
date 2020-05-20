@@ -7,7 +7,7 @@
         :fetching="fetching"
         @click.native="fetchNewsFeed(currentFeed)"
       />
-      <TimeAgo :fetching="fetching" />
+      <!-- <TimeAgo :fetching="fetching" /> -->
 
       <!-- Feed Select -->
       <div class="select-wrapper">
@@ -69,7 +69,7 @@
 
 <script>
 import Refresh from '../Refresh.vue';
-import TimeAgo from '../TimeAgo.vue';
+// import TimeAgo from '../TimeAgo.vue';
 
 const convert = require('xml-js');
 
@@ -77,7 +77,7 @@ export default {
   name: 'News',
   components: {
     Refresh,
-    TimeAgo,
+    // TimeAgo,
   },
   props: {
     openNewsIframe: Function,
