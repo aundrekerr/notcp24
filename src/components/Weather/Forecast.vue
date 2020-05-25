@@ -12,7 +12,7 @@
         ~
       </span>
       <div class="forecast-icon z-10">
-        <img :src="`http://openweathermap.org/img/wn/01d@2x.png`" alt="">
+        <img :src="`https://openweathermap.org/img/wn/01d@2x.png`" alt="">
       </div>
       <span class="
         forecast-temp
@@ -30,7 +30,7 @@
         <template v-else>{{ f.dt | moment("ddd") }}</template>
       </span>
       <div class="forecast-icon z-10">
-        <img :src="`http://openweathermap.org/img/wn/${f.weather[0].icon}@2x.png`" alt="">
+        <img :src="`https://openweathermap.org/img/wn/${f.weather[0].icon}@2x.png`" alt="">
       </div>
       <span class="
         forecast-temp

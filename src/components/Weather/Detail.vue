@@ -12,7 +12,7 @@
       <div class="forecast-content">
         <div class="temperature-data">
           <div class="icon">
-            <img :src="`http://openweathermap.org/img/wn/${f.weather[0].icon}@2x.png`" alt="">
+            <img :src="`https://openweathermap.org/img/wn/${f.weather[0].icon}@2x.png`" alt="">
             <span class="description font-light text-xs leading-tight uppercase">
                 {{ f.weather[0].description }}
             </span>
@@ -107,7 +107,7 @@ export default {
     top: 0;
     left: 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
     height: 100%;
     border-top: 1px solid var(--brandSecondary);
